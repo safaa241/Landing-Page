@@ -1,0 +1,117 @@
+/* Assure que la section Prix s'étend sur toute la largeur de l'écran */  
+#root {  
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh;  
+}  
+
+.main-content {  
+    flex: 1; /* Permet d'occuper l'espace restant */  
+}  
+
+/* Section pill (fond étendu sur toute la largeur) */  
+.pill {  
+    background: #E7ECFF;  
+    padding: 100px ;  
+    min-height: 8vh;  
+    width: 100vw;  
+    margin-left: calc(-50vw + 50%);  
+    position: relative;  
+    z-index: auto;  
+}  
+
+.pill::before {  
+    content: "";  
+    position: absolute;  
+    top: -50px;  
+    left: 0;  
+    width: 100%;  
+    height: 100px;  
+    background-color: #FFFFFF;  
+    border-bottom-left-radius: 50% 50px;  
+    border-bottom-right-radius: 50% 50px;  
+}  
+
+/* Cartes de prix */  
+.price-card {  
+    border: none !important;  
+    background-color: transparent;  
+    box-shadow: none !important;  
+    max-width: 600px; /* Largeur maximale du contenu */  
+    margin: 0 auto; /* Centre la carte horizontalement */  
+}  
+
+/* Footer */  
+.footer {  
+    background-color: #E7ECFF;  
+    padding: 50px 50px;  
+    width: 100vw;  
+    margin-left: calc(-50vw + 50%);  
+    margin-top: 0;  
+    margin-bottom: -5rem;  
+}  
+
+.footer .container {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 0 20px;  
+}  
+
+.footer-text {  
+    color: #929ECC;  
+    font-size: 0.875rem;  
+    margin-right: 30px;  
+}  
+
+.footer-brand {  
+    font-weight: bold;  
+    color: #222F65;  
+    font-size: 1.25rem;  
+}  
+
+.footer-button {  
+    border: none;  
+    background-color: transparent;  
+    color: #ffffff;  
+    font-size: 16px;  
+    padding: 5px 20px;  
+    margin-left: 20px;  
+    border-radius: 0;  
+    cursor: pointer;  
+    transition: all 0.3s ease-in-out;  
+    background-color: #111B47;  
+}  
+
+.footer-button:hover {  
+    background-color: #0d1436;  
+}  
+
+/* Lien footer et social */  
+.footer-link,  
+.social-link {  
+    color: #929ECC;  
+    font-size: 0.875rem;  
+    margin: 0 10px;  
+    text-decoration: none;  
+}  
+
+.footer-link:hover,  
+.social-link:hover {  
+    color: #111B47;  
+}  
+
+.price-button {  
+    display: block;  
+    margin: 20px auto;  
+    padding: 5px 35px;  
+    background-color: #111B47;  
+    color: white;  
+    border: none;  
+    font-size: 1rem;  
+    cursor: pointer;  
+    border-radius: 0px;  
+}  
+
+.price-button:hover {  
+    background-color: #0d1436;  
+}  
