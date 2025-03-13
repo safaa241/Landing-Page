@@ -45,22 +45,7 @@ function Prix() {
             amount: "$40",  
             subtitle: "UI Design Kit",  
             buttonText: "Purchase Now",  
-            subPrices: [ // Sous-prix à afficher de manière récursive  
-                {  
-                    title: "Basic Plan",  
-                    description: "Ideal for beginners.",  
-                    amount: "$20",  
-                    subtitle: "Starter Pack",  
-                    buttonText: "Buy Basic"  
-                },  
-                {  
-                    title: "Premium Plan",  
-                    description: "Best for advanced users.",  
-                    amount: "$60",  
-                    subtitle: "Advanced Pack",  
-                    buttonText: "Buy Premium"  
-                },  
-            ]  
+             
         }  
     ];  
 
